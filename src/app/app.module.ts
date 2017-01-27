@@ -5,10 +5,11 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import {SwapiService} from "./core/swapi.service";
+import { PersonComponent } from './person/person/person.component';
 
 @NgModule({
   declarations: [ //Componentes de la vista (directivas, componentes, pipes...)
-    AppComponent
+    AppComponent, PersonComponent
   ],
   imports: [ //Modulos de 3ros a usar en la app
     BrowserModule,
