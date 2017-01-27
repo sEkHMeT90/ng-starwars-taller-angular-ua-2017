@@ -4,17 +4,20 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {SwapiService} from "./core/swapi.service";
 
 @NgModule({
-  declarations: [
+  declarations: [ //Componentes de la vista (directivas, componentes, pipes...)
     AppComponent
   ],
-  imports: [
+  imports: [ //Modulos de 3ros a usar en la app
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ //Servicios
+    SwapiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
